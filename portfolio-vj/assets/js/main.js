@@ -1,6 +1,29 @@
+/*===== TEXT ANIMATION =====*/
+const texts = ["Engineer", "Analyst", "Consultant", "Architect"];
+let count = 0;
+let index = 0;
+let currentText = "";
+let letter = "";
+
+(function type() {
+    if (count === texts.length) {
+        count = 0;
+    }
+    currentText = texts[count];
+    letter = currentText.slice(0, ++index);
+
+    document.querySelector(".typing").textContent = letter;
+    if (letter.length === currentText.length) {
+        count++;
+        index = 0;
+    }
+    setTimeout(type, 400);
+})();
+
+
 /*===== MOUSE CURSOR =====*/
-let mouseCursor = document.querySelector(".cursor");
-let navLinks = document.querySelectorAll('.nav__list ul');
+/*let mouseCursor = document.querySelector(".cursor");
+let navLinks = document.querySelectorAll('.nav__link li');
 
 window.addEventListener('mousemove', cursor);
 
@@ -18,7 +41,45 @@ navLinks.forEach(link => {
         mouseCursor.classList.remove("link-grow");
         link.classList.remove('hovered-link');
     });
-});
+});*/
+
+(function() {
+    var follower, init, mouseX, mouseY, positionElement, printout, timer;
+
+    follower = document.getElementById('follower');
+
+    printout = document.getElementById('printout');
+
+    mouseX = event => {
+        return event.clientX;
+    };
+
+    mouseY = event => {
+        return event.clientY;
+    };
+
+    positionElement = event => {
+        var mouse;
+        mouse = {
+            x: mouseX(event),
+            y: mouseY(event)
+        };
+
+        follower.style.top = mouse.y + 'px';
+        return follower.style.left = mouse.x + 'px';
+    };
+
+    timer = false;
+
+    window.onmousemove = init = event => {
+        var _event;
+        _event = event;
+        return timer = setTimeout(() => {
+            return positionElement(_event);
+        }, 1);
+    };
+
+}).call(this);
 
 /*===== MENU SHOW =====*/
 const showMenu = (toggleId, navId) => {
