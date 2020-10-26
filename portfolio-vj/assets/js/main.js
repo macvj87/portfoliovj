@@ -1,5 +1,5 @@
 /*===== TEXT ANIMATION =====*/
-const texts = ["Engineer", "Analyst", "Consultant", "Architect"];
+const texts = ["Engineer", "Analyst", "Consultant"];
 let count = 0;
 let index = 0;
 let currentText = "";
