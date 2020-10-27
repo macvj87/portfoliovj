@@ -186,12 +186,10 @@ img {
 .nav__link {
     position: relative;
     color: #fff;
-    z-index: 1;
 }
 
 .nav__link:hover {
     position: relative;
-    z-index: 1;
 }
 
 .nav__link:hover::after {
@@ -202,7 +200,6 @@ img {
     left: 0;
     top: 2rem;
     background-color: var(--first-color);
-    z-index: 1;
 }
 
 .nav__logo {
@@ -313,7 +310,8 @@ img {
 
 /*MOUSE CURSOR*/
 
-.cursor {
+
+/*.cursor {
     width: 3rem;
     height: 3rem;
     border: 2px solid #4070F4;
@@ -336,7 +334,27 @@ img {
     -o-transition: all 0.3s ease;
     transition-property: background, transform;
     transform-origin: 100% 100%;
-    z-index: 2;
+}
+
+.cursor.nav-active {
+    background: rgb(86, 124, 228);
+    transform: scale(3);
+    -webkit-transform: scale(3);
+    -moz-transform: scale(3);
+    -ms-transform: scale(3);
+    -o-transform: scale(3);
+}
+
+.cursor-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 0.5rem;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
 }
 
 
@@ -391,7 +409,8 @@ img {
     z-index: 1;
 }*/
 
-.link-grow {
+
+/*.link-grow {
     transform: scale(2);
     -webkit-transform: scale(2);
     -moz-transform: scale(2);
@@ -402,7 +421,7 @@ img {
 
 .hovered-link {
     color: white;
-}
+}*/
 
 
 /* ===== SCROLL DOWN =====*/

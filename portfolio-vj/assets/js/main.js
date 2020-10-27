@@ -22,8 +22,8 @@ let letter = "";
 
 
 /*===== MOUSE CURSOR =====*/
-let mouseCursor = document.querySelector(".cursor");
-let navLinks = document.querySelectorAll('.nav__link li');
+/*let mouseCursor = document.querySelector(".cursor");
+let navLinks = document.querySelectorAll('.nav__link');
 
 window.addEventListener("mousemove", cursor);
 
@@ -33,15 +33,15 @@ function cursor(e) {
 }
 
 navLinks.forEach(link => {
-    link.addEventListener('mouseover', () => {
+    link.addEventListener("mouseover", () => {
         mouseCursor.classList.add("link-grow");
         link.classList.add('hovered-link');
     });
-    link.addEventListener('mouseleave', () => {
+    link.addEventListener("mouseleave", () => {
         mouseCursor.classList.remove("link-grow");
         link.classList.remove('hovered-link');
     });
-});
+});*/
 
 /*(function() {
     var follower, init, mouseX, mouseY, positionElement, printout, timer;
