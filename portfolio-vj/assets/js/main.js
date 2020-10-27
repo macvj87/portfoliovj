@@ -22,14 +22,14 @@ let letter = "";
 
 
 /*===== MOUSE CURSOR =====*/
-/*let mouseCursor = document.querySelector(".cursor");
+let mouseCursor = document.querySelector(".cursor");
 let navLinks = document.querySelectorAll('.nav__link li');
 
-window.addEventListener('mousemove', cursor);
+window.addEventListener("mousemove", cursor);
 
 function cursor(e) {
-    mouseCursor.style.top = e.pageY + 'px';
-    mouseCursor.style.left = e.pageX + 'px';
+    mouseCursor.style.top = e.pageY + "px";
+    mouseCursor.style.left = e.pageX + "px";
 }
 
 navLinks.forEach(link => {
@@ -41,9 +41,9 @@ navLinks.forEach(link => {
         mouseCursor.classList.remove("link-grow");
         link.classList.remove('hovered-link');
     });
-});*/
+});
 
-(function() {
+/*(function() {
     var follower, init, mouseX, mouseY, positionElement, printout, timer;
 
     follower = document.getElementById('follower');
@@ -79,7 +79,7 @@ navLinks.forEach(link => {
         }, 1);
     };
 
-}).call(this);
+}).call(this);*/
 
 /*===== MENU SHOW =====*/
 const showMenu = (toggleId, navId) => {
