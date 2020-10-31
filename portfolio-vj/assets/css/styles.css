@@ -533,12 +533,16 @@ img {
 }
 
 .about__img {
-    justify-self: center;
+    justify-self: left;
 }
 
 .about__img img {
-    width: 200px;
-    border-radius: .5rem;
+    width: 300px;
+    border-radius: .2rem;
+    -webkit-border-radius: .2rem;
+    -moz-border-radius: .2rem;
+    -ms-border-radius: .2rem;
+    -o-border-radius: .2rem;
 }
 
 
@@ -616,6 +620,60 @@ img {
     -moz-border-radius: .8rem;
     -ms-border-radius: .8rem;
     -o-border-radius: .8rem;
+}
+
+#white-leaf {
+    animation: whiteleaf 2s infinite ease both;
+    -webkit-animation: whiteleaf 2s infinite ease both;
+    transform-box: fill-box;
+}
+
+#blue-leaf {
+    animation: blueleaf 2s infinite ease both;
+    -webkit-animation: blueleaf 2s infinite ease both;
+    transform-box: fill-box;
+}
+
+#para-main {
+    animation: para 2s infinite ease both;
+    -webkit-animation: para 2s infinite ease both;
+    transform-box: fill-box;
+}
+
+#para2 {
+    animation: para-hor 2s infinite ease both;
+    -webkit-animation: para-hor 2s infinite ease both;
+    transform-box: fill-box;
+}
+
+#linex1 {
+    animation: para 2s infinite ease both;
+    -webkit-animation: para 2s infinite ease both;
+    transform-box: fill-box;
+}
+
+#linex2 {
+    animation: para-hor 2s infinite ease both;
+    -webkit-animation: para-hor 2s infinite ease both;
+    transform-box: fill-box;
+}
+
+#line1 {
+    animation: flicker-in 1s infinite ease both;
+    -webkit-animation: flicker-in 1s infinite ease both;
+    transform-box: fill-box;
+}
+
+#line2 {
+    animation: flicker-in 1s infinite ease both;
+    -webkit-animation: flicker-in 1s infinite ease both;
+    transform-box: fill-box;
+}
+
+#line3 {
+    animation: flicker-in 1s infinite ease both;
+    -webkit-animation: flicker-in 1s infinite ease both;
+    transform-box: fill-box;
 }
 
 
@@ -1011,5 +1069,176 @@ img {
         -moz-transform: translateX(-8px);
         -ms-transform: translateX(-8px);
         -o-transform: translateX(-8px);
+    }
+}
+
+
+/* ===== skills Animation=====*/
+
+@keyframes whiteleaf {
+    0% {
+        transform: rotateZ(45deg);
+        -webkit-transform: rotateZ(45deg);
+        -moz-transform: rotateZ(45deg);
+        -ms-transform: rotateZ(45deg);
+        -o-transform: rotateZ(45deg);
+        opacity: 0
+    }
+    to {
+        transform: rotateZ(0);
+        -webkit-transform: rotateZ(0);
+        -moz-transform: rotateZ(0);
+        -ms-transform: rotateZ(0);
+        -o-transform: rotateZ(0);
+        opacity: 1
+    }
+}
+
+@keyframes blueleaf {
+    0% {
+        transform: rotateZ(-45deg);
+        -webkit-transform: rotateZ(-45deg);
+        -moz-transform: rotateZ(-45deg);
+        -ms-transform: rotateZ(-45deg);
+        -o-transform: rotateZ(-45deg);
+        opacity: 0;
+    }
+    to {
+        transform: rotateZ(0);
+        -webkit-transform: rotateZ(0);
+        -moz-transform: rotateZ(0);
+        -ms-transform: rotateZ(0);
+        -o-transform: rotateZ(0);
+        opacity: 1
+    }
+}
+
+@keyframes para {
+    0%,
+    to {
+        transform: scale3d(1, 1, 1);
+        -webkit-transform: scale3d(1, 1, 1);
+        -moz-transform: scale3d(1, 1, 1);
+        -ms-transform: scale3d(1, 1, 1);
+        -o-transform: scale3d(1, 1, 1);
+    }
+    30% {
+        transform: scale3d(.75, 1.25, 1);
+        -webkit-transform: scale3d(.75, 1.25, 1);
+        -moz-transform: scale3d(.75, 1.25, 1);
+        -ms-transform: scale3d(.75, 1.25, 1);
+        -o-transform: scale3d(.75, 1.25, 1);
+    }
+    40% {
+        transform: scale3d(1.25, .75, 1);
+        -webkit-transform: scale3d(1.25, .75, 1);
+        -moz-transform: scale3d(1.25, .75, 1);
+        -ms-transform: scale3d(1.25, .75, 1);
+        -o-transform: scale3d(1.25, .75, 1);
+    }
+    50% {
+        transform: scale3d(.85, 1.15, 1);
+        -webkit-transform: scale3d(.85, 1.15, 1);
+        -moz-transform: scale3d(.85, 1.15, 1);
+        -ms-transform: scale3d(.85, 1.15, 1);
+        -o-transform: scale3d(.85, 1.15, 1);
+    }
+    65% {
+        transform: scale3d(1.05, .95, 1);
+        -webkit-transform: scale3d(1.05, .95, 1);
+        -moz-transform: scale3d(1.05, .95, 1);
+        -ms-transform: scale3d(1.05, .95, 1);
+        -o-transform: scale3d(1.05, .95, 1);
+    }
+    75% {
+        transform: scale3d(.95, 1.05, 1);
+        -webkit-transform: scale3d(.95, 1.05, 1);
+        -moz-transform: scale3d(.95, 1.05, 1);
+        -ms-transform: scale3d(.95, 1.05, 1);
+        -o-transform: scale3d(.95, 1.05, 1);
+    }
+}
+
+@keyframes para-hor {
+    0%,
+    to {
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+        -moz-transform: scale3d(1, 1, 1);
+        -ms-transform: scale3d(1, 1, 1);
+        -o-transform: scale3d(1, 1, 1);
+    }
+    30% {
+        -webkit-transform: scale3d(1.25, .75, 1);
+        transform: scale3d(1.25, .75, 1);
+        -moz-transform: scale3d(1.25, .75, 1);
+        -ms-transform: scale3d(1.25, .75, 1);
+        -o-transform: scale3d(1.25, .75, 1);
+    }
+    40% {
+        -webkit-transform: scale3d(.75, 1.25, 1);
+        transform: scale3d(.75, 1.25, 1);
+        -moz-transform: scale3d(.75, 1.25, 1);
+        -ms-transform: scale3d(.75, 1.25, 1);
+        -o-transform: scale3d(.75, 1.25, 1);
+    }
+    50% {
+        -webkit-transform: scale3d(1.15, .85, 1);
+        transform: scale3d(1.15, .85, 1);
+        -moz-transform: scale3d(1.15, .85, 1);
+        -ms-transform: scale3d(1.15, .85, 1);
+        -o-transform: scale3d(1.15, .85, 1);
+    }
+    65% {
+        -webkit-transform: scale3d(.95, 1.05, 1);
+        transform: scale3d(.95, 1.05, 1);
+        -moz-transform: scale3d(.95, 1.05, 1);
+        -ms-transform: scale3d(.95, 1.05, 1);
+        -o-transform: scale3d(.95, 1.05, 1);
+    }
+    75% {
+        -webkit-transform: scale3d(1.05, .95, 1);
+        transform: scale3d(1.05, .95, 1);
+        -moz-transform: scale3d(1.05, .95, 1);
+        -ms-transform: scale3d(1.05, .95, 1);
+        -o-transform: scale3d(1.05, .95, 1);
+    }
+}
+
+@keyframes flicker-in {
+    0%,
+    10%,
+    10.2%,
+    20%,
+    20.6%,
+    30%,
+    30.6%,
+    45%,
+    55.1%,
+    57%,
+    60.1%,
+    65%,
+    75.1%,
+    77%,
+    85.1%,
+    86% {
+        opacity: 0
+    }
+    10.1%,
+    20.1%,
+    30.1%,
+    30.5%,
+    45.1%,
+    50%,
+    55%,
+    57.1%,
+    60%,
+    65.1%,
+    75%,
+    77.1%,
+    85%,
+    86.1%,
+    to {
+        opacity: 1
     }
 }
